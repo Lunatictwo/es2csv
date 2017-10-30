@@ -262,3 +262,8 @@ A CSV file in default format
 
   body,comments.0.age,comments.0.comment,comments.0.date,comments.0.name,comments.0.stars,comments.1.age,comments.1.comment,comments.1.date,comments.1.name,comments.1.stars,tags.0,tags.1,title
   Making your money work...,28,Great article,2014-09-01,John Smith,4,31,More like this please,2014-10-22,Alice White,5,cash,shares,Nest eggs
+  
+  
+  
+Usage:
+python es2csv.py -u 192.168.1.1:9200 -i test-request-log-* -r -q @'query/data_out.json' -o data_out.csv
